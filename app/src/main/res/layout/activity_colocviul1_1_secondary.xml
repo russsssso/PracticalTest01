@@ -4,43 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="ro.pub.cs.systems.eim.PracticalTest01.Colocviu1_1MainActivity">
-
-    <Button
-        android:id="@+id/navigate_to_secondary_activity_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="NAVIGATE TO SECONDARY ACTIVY" />
+    tools:context="ro.pub.cs.systems.eim.PracticalTest01.Colocviul1_1SecondaryActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/left_edit_text"
+        <TextView
+            android:id="@+id/result"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:enabled="false"
-            android:inputType="number"
             android:gravity="center" />
-
-        <EditText
-            android:id="@+id/right_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:enabled="false"
-            android:inputType="number"
-            android:gravity="center" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false" >
+        android:baselineAligned="false">
 
         <ScrollView
             android:layout_width="0dp"
@@ -48,12 +30,11 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/left_button"
+                android:id="@+id/register_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Press Me" />
-
+                android:text="Register" />
         </ScrollView>
 
         <ScrollView
@@ -62,12 +43,11 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/right_button"
+                android:id="@+id/cancel_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Press Me, TOO!" />
-
+                android:text="Cancel" />
         </ScrollView>
 
     </LinearLayout>
